@@ -1,0 +1,1224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Customer Support Research Dashboard | Sumit Agnihotri</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>AI Support Research</h3>
+            <p class="student-name">Sumit Agnihotri – 2026</p>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active" onclick="showPage('home')"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about" class="nav-link" onclick="showPage('about')"><i class="fas fa-info-circle"></i> About Research</a></li>
+            <li><a href="#objectives" class="nav-link" onclick="showPage('objectives')"><i class="fas fa-bullseye"></i> Research Objectives</a></li>
+            <li><a href="#survey" class="nav-link" onclick="showPage('survey')"><i class="fas fa-chart-pie"></i> Survey Analysis</a></li>
+            <li><a href="#dashboard" class="nav-link" onclick="showPage('dashboard')"><i class="fas fa-tachometer-alt"></i> Data Dashboard</a></li>
+            <li><a href="#impact" class="nav-link" onclick="showPage('impact')"><i class="fas fa-chart-line"></i> AI Impact Analysis</a></li>
+            <li><a href="#case-studies" class="nav-link" onclick="showPage('case-studies')"><i class="fas fa-briefcase"></i> Case Studies</a></li>
+            <li><a href="#experience" class="nav-link" onclick="showPage('experience')"><i class="fas fa-users"></i> Customer Experience</a></li>
+            <li><a href="#insights" class="nav-link" onclick="showPage('insights')"><i class="fas fa-lightbulb"></i> Research Insights</a></li>
+            <li><a href="#predictions" class="nav-link" onclick="showPage('predictions')"><i class="fas fa-rocket"></i> Future Predictions</a></li>
+            <li><a href="#documentation" class="nav-link" onclick="showPage('documentation')"><i class="fas fa-file-alt"></i> Documentation</a></li>
+            <li><a href="#visualization" class="nav-link" onclick="showPage('visualization')"><i class="fas fa-flask"></i> Visualization Lab</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="hero-section">
+                <h1 class="project-title">Impact of Artificial Intelligence on Customer Support Experience</h1>
+                <p class="subtitle">A Comprehensive Data Science Research Project</p>
+                <p class="author">By Sumit Agnihotri – 2026</p>
+            </div>
+
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <div class="card-content">
+                        <h3>5,247</h3>
+                        <p>Total Participants</p>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <div class="card-content">
+                        <h3>68.5%</h3>
+                        <p>AI Support Usage</p>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon"><i class="fas fa-star"></i></div>
+                    <div class="card-content">
+                        <h3>4.2/5</h3>
+                        <p>Satisfaction Score</p>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon"><i class="fas fa-clock"></i></div>
+                    <div class="card-content">
+                        <h3>2.3 min</h3>
+                        <p>Avg Response Time</p>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="card-content">
+                        <h3>73%</h3>
+                        <p>AI Adoption Rate</p>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
+                    <div class="card-content">
+                        <h3>58% : 42%</h3>
+                        <p>AI vs Human Preference</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2>AI Adoption in Customer Support (2015-2026)</h2>
+                <canvas id="adoptionTimeline"></canvas>
+            </div>
+        </div>
+
+        <!-- About Research Page -->
+        <div id="about" class="page">
+            <h1>About the Research</h1>
+
+            <div class="content-section">
+                <h2>Research Background</h2>
+                <p>The integration of artificial intelligence in customer support has fundamentally transformed how organizations interact with their customers. This research investigates the comprehensive impact of AI-powered support systems on customer experience, operational efficiency, and business outcomes.</p>
+
+                <h2>Problem Statement</h2>
+                <p>Traditional customer support models face significant challenges including high operational costs, inconsistent service quality, extended response times, and scalability limitations. Organizations struggle to maintain 24/7 availability while ensuring personalized customer experiences. This research addresses the critical question: How does AI implementation in customer support systems affect overall customer satisfaction and operational performance?</p>
+
+                <h2>Importance of AI in Customer Support</h2>
+                <div class="importance-grid">
+                    <div class="importance-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Instant Response</h3>
+                        <p>AI enables immediate response to customer queries, eliminating wait times and improving satisfaction.</p>
+                    </div>
+                    <div class="importance-card">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>Cost Efficiency</h3>
+                        <p>Automated systems reduce operational costs by 30-50% while handling higher volumes.</p>
+                    </div>
+                    <div class="importance-card">
+                        <i class="fas fa-infinity"></i>
+                        <h3>24/7 Availability</h3>
+                        <p>AI systems provide round-the-clock support without human resource constraints.</p>
+                    </div>
+                    <div class="importance-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Scalability</h3>
+                        <p>Handle unlimited concurrent interactions without degradation in service quality.</p>
+                    </div>
+                </div>
+
+                <h2>Methodology Overview</h2>
+                <p><strong>Research Design:</strong> Mixed-method approach combining quantitative survey data and qualitative analysis</p>
+                <p><strong>Sample Size:</strong> 5,247 participants across multiple industries and demographics</p>
+                <p><strong>Data Collection:</strong> Online surveys, customer interaction logs, performance metrics from AI systems</p>
+                <p><strong>Analysis Tools:</strong> Statistical analysis, sentiment analysis, comparative performance evaluation</p>
+                <p><strong>Time Period:</strong> Data collected from January 2023 to December 2025</p>
+            </div>
+        </div>
+
+        <!-- Research Objectives Page -->
+        <div id="objectives" class="page">
+            <h1>Research Objectives</h1>
+
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <div class="objective-number">01</div>
+                    <div class="objective-icon"><i class="fas fa-smile"></i></div>
+                    <h3>Analyze Customer Satisfaction</h3>
+                    <p>Measure and evaluate customer satisfaction levels with AI-powered support systems compared to traditional human support across different service scenarios.</p>
+                    <div class="metric-badge">Target: 80% satisfaction</div>
+                </div>
+
+                <div class="objective-card">
+                    <div class="objective-number">02</div>
+                    <div class="objective-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Compare AI vs Human Support</h3>
+                    <p>Conduct comprehensive comparative analysis of effectiveness, efficiency, and customer preference between AI and human support channels.</p>
+                    <div class="metric-badge">12 performance metrics</div>
+                </div>
+
+                <div class="objective-card">
+                    <div class="objective-number">03</div>
+                    <div class="objective-icon"><i class="fas fa-stopwatch"></i></div>
+                    <h3>Evaluate Response Time Improvements</h3>
+                    <p>Quantify response time reductions and assess impact on customer satisfaction and issue resolution rates.</p>
+                    <div class="metric-badge">Real-time tracking</div>
+                </div>
+
+                <div class="objective-card">
+                    <div class="objective-number">04</div>
+                    <div class="objective-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Assess Automation Benefits</h3>
+                    <p>Identify and measure operational efficiency gains, cost reductions, and scalability improvements from AI automation.</p>
+                    <div class="metric-badge">ROI analysis included</div>
+                </div>
+
+                <div class="objective-card">
+                    <div class="objective-number">05</div>
+                    <div class="objective-icon"><i class="fas fa-chart-area"></i></div>
+                    <h3>Study AI Adoption Trends</h3>
+                    <p>Analyze historical adoption patterns, industry-wise implementation rates, and future growth projections for AI in customer support.</p>
+                    <div class="metric-badge">2015-2026 timeline</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Survey Analysis Page -->
+        <div id="survey" class="page">
+            <h1>Survey Analysis</h1>
+
+            <div class="analysis-intro">
+                <p>Comprehensive analysis of 5,247 survey responses collected from customers across various industries. The data provides insights into customer demographics, AI usage patterns, and satisfaction levels.</p>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-box">
+                    <h3>Customer Age Distribution</h3>
+                    <canvas id="ageDistribution"></canvas>
+                </div>
+
+                <div class="chart-box">
+                    <h3>AI Support Usage</h3>
+                    <canvas id="aiUsage"></canvas>
+                </div>
+
+                <div class="chart-box full-width">
+                    <h3>Customer Satisfaction with AI Support</h3>
+                    <canvas id="satisfactionChart"></canvas>
+                </div>
+            </div>
+
+            <div class="insights-box">
+                <h3>Key Survey Findings</h3>
+                <ul>
+                    <li>68.5% of respondents have used AI-powered customer support in the past year</li>
+                    <li>Younger demographics (18-34) show 82% adoption rate vs 45% for 55+ age group</li>
+                    <li>Overall satisfaction score of 4.2/5 for AI support interactions</li>
+                    <li>Simple queries show 91% satisfaction, complex issues show 62% satisfaction</li>
+                    <li>78% appreciate instant response times despite occasional accuracy concerns</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Data Dashboard Page -->
+        <div id="dashboard" class="page">
+            <h1>Data Dashboard</h1>
+
+            <div class="dashboard-filters">
+                <select id="ageFilter" onchange="applyDashboardFilters()">
+                    <option value="all">All Ages</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-44">35-44</option>
+                    <option value="45-54">45-54</option>
+                    <option value="55+">55+</option>
+                </select>
+
+                <select id="regionFilter" onchange="applyDashboardFilters()">
+                    <option value="all">All Regions</option>
+                    <option value="north-america">North America</option>
+                    <option value="europe">Europe</option>
+                    <option value="asia">Asia</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <select id="supportTypeFilter" onchange="applyDashboardFilters()">
+                    <option value="all">All Support Types</option>
+                    <option value="ai">AI Support</option>
+                    <option value="human">Human Support</option>
+                </select>
+            </div>
+
+            <div class="kpi-grid">
+                <div class="kpi-card" data-tooltip="Average time from query to first response">
+                    <div class="kpi-icon"><i class="fas fa-clock"></i></div>
+                    <h3 id="kpi-response-time">2.3 min</h3>
+                    <p>Avg Response Time</p>
+                    <span class="trend positive">↓ 65% vs human</span>
+                </div>
+
+                <div class="kpi-card" data-tooltip="Percentage of accurate responses provided">
+                    <div class="kpi-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3 id="kpi-accuracy">87.6%</h3>
+                    <p>Accuracy Rate</p>
+                    <span class="trend positive">↑ 5.2%</span>
+                </div>
+
+                <div class="kpi-card" data-tooltip="Cost savings compared to traditional support">
+                    <div class="kpi-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <h3 id="kpi-cost">43%</h3>
+                    <p>Cost Efficiency</p>
+                    <span class="trend positive">↑ $2.1M saved</span>
+                </div>
+
+                <div class="kpi-card" data-tooltip="Customer satisfaction score out of 5">
+                    <div class="kpi-icon"><i class="fas fa-star"></i></div>
+                    <h3 id="kpi-cx-score">4.2/5</h3>
+                    <p>CX Score</p>
+                    <span class="trend positive">↑ 0.8 points</span>
+                </div>
+
+                <div class="kpi-card" data-tooltip="First contact resolution rate">
+                    <div class="kpi-icon"><i class="fas fa-ticket-alt"></i></div>
+                    <h3 id="kpi-resolution">76.4%</h3>
+                    <p>Resolution Rate</p>
+                    <span class="trend positive">↑ 12%</span>
+                </div>
+
+                <div class="kpi-card" data-tooltip="Total monthly support interactions">
+                    <div class="kpi-icon"><i class="fas fa-comments"></i></div>
+                    <h3 id="kpi-volume">142K</h3>
+                    <p>Monthly Volume</p>
+                    <span class="trend positive">↑ 28%</span>
+                </div>
+            </div>
+
+            <div class="dashboard-charts">
+                <div class="chart-box">
+                    <h3>Response Time Trends</h3>
+                    <canvas id="responseTimeTrend"></canvas>
+                </div>
+
+                <div class="chart-box">
+                    <h3>Support Channel Distribution</h3>
+                    <canvas id="channelDistribution"></canvas>
+                </div>
+
+                <div class="chart-box">
+                    <h3>Monthly Ticket Volume</h3>
+                    <canvas id="ticketVolume"></canvas>
+                </div>
+
+                <div class="chart-box">
+                    <h3>Satisfaction by Query Type</h3>
+                    <canvas id="satisfactionByType"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Impact Analysis Page -->
+        <div id="impact" class="page">
+            <h1>AI Impact Analysis</h1>
+
+            <div class="impact-section">
+                <h2><i class="fas fa-cogs"></i> Operational Efficiency</h2>
+                <div class="impact-metrics">
+                    <div class="metric-item">
+                        <span class="metric-label">Query Handling Capacity</span>
+                        <div class="metric-bar">
+                            <div class="before-bar" style="width: 35%;">Before: 450/day</div>
+                            <div class="after-bar" style="width: 100%;">After: 2,800/day</div>
+                        </div>
+                        <span class="improvement">+522% increase</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">Average Handle Time</span>
+                        <div class="metric-bar">
+                            <div class="before-bar" style="width: 100%;">Before: 8.5 min</div>
+                            <div class="after-bar" style="width: 27%;">After: 2.3 min</div>
+                        </div>
+                        <span class="improvement">-73% reduction</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">First Response Time</span>
+                        <div class="metric-bar">
+                            <div class="before-bar" style="width: 100%;">Before: 12 min</div>
+                            <div class="after-bar" style="width: 8%;">After: 0.5 min</div>
+                        </div>
+                        <span class="improvement">-96% reduction</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="impact-section">
+                <h2><i class="fas fa-dollar-sign"></i> Cost Reduction</h2>
+                <div class="cost-comparison-chart">
+                    <canvas id="costComparisonChart"></canvas>
+                </div>
+                <div class="cost-insights">
+                    <div class="cost-card">
+                        <h4>Annual Savings</h4>
+                        <p class="big-number">$2.1M</p>
+                        <p class="description">43% reduction in support costs</p>
+                    </div>
+                    <div class="cost-card">
+                        <h4>Cost per Interaction</h4>
+                        <p class="big-number">$1.20</p>
+                        <p class="description">vs $5.50 for human support</p>
+                    </div>
+                    <div class="cost-card">
+                        <h4>ROI Achievement</h4>
+                        <p class="big-number">8 months</p>
+                        <p class="description">Break-even timeline</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="impact-section">
+                <h2><i class="fas fa-smile"></i> Customer Satisfaction</h2>
+                <div class="satisfaction-comparison">
+                    <canvas id="satisfactionComparisonChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Studies Page -->
+        <div id="case-studies" class="page">
+            <h1>Industry Case Studies</h1>
+
+            <div class="case-study-card">
+                <div class="case-study-header">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>E-Commerce Industry</h3>
+                </div>
+                <div class="case-study-body">
+                    <div class="case-info">
+                        <p><strong>AI System Used:</strong> Intelligent chatbot with product recommendation engine</p>
+                        <p><strong>Implementation Scale:</strong> 500K+ monthly interactions</p>
+                    </div>
+                    <div class="case-benefits">
+                        <h4>Benefits Achieved:</h4>
+                        <ul>
+                            <li>Order tracking queries reduced by 78%</li>
+                            <li>Product recommendations increased sales by 15%</li>
+                            <li>Support costs decreased by 52%</li>
+                            <li>24/7 availability improved CSAT by 0.9 points</li>
+                        </ul>
+                    </div>
+                    <div class="case-chart">
+                        <canvas id="ecommerceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study-card">
+                <div class="case-study-header">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telecommunications</h3>
+                </div>
+                <div class="case-study-body">
+                    <div class="case-info">
+                        <p><strong>AI System Used:</strong> Voice AI assistant with technical troubleshooting</p>
+                        <p><strong>Implementation Scale:</strong> 1.2M+ monthly calls</p>
+                    </div>
+                    <div class="case-benefits">
+                        <h4>Benefits Achieved:</h4>
+                        <ul>
+                            <li>Call center volume reduced by 45%</li>
+                            <li>Technical issue resolution improved to 68% first-call</li>
+                            <li>Average call duration decreased from 12 to 4 minutes</li>
+                            <li>Customer churn reduced by 8%</li>
+                        </ul>
+                    </div>
+                    <div class="case-chart">
+                        <canvas id="telecomChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study-card">
+                <div class="case-study-header">
+                    <i class="fas fa-plane"></i>
+                    <h3>Airlines</h3>
+                </div>
+                <div class="case-study-body">
+                    <div class="case-info">
+                        <p><strong>AI System Used:</strong> Multi-channel AI with booking and flight status integration</p>
+                        <p><strong>Implementation Scale:</strong> 800K+ monthly interactions</p>
+                    </div>
+                    <div class="case-benefits">
+                        <h4>Benefits Achieved:</h4>
+                        <ul>
+                            <li>Booking modifications handled automatically (89% success)</li>
+                            <li>Flight delay notifications proactive for 95% passengers</li>
+                            <li>Support during peak travel increased capacity by 600%</li>
+                            <li>Multilingual support in 12 languages without hiring</li>
+                        </ul>
+                    </div>
+                    <div class="case-chart">
+                        <canvas id="airlineChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study-card">
+                <div class="case-study-header">
+                    <i class="fas fa-university"></i>
+                    <h3>Banking & Finance</h3>
+                </div>
+                <div class="case-study-body">
+                    <div class="case-info">
+                        <p><strong>AI System Used:</strong> Secure AI assistant with fraud detection</p>
+                        <p><strong>Implementation Scale:</strong> 2M+ monthly interactions</p>
+                    </div>
+                    <div class="case-benefits">
+                        <h4>Benefits Achieved:</h4>
+                        <ul>
+                            <li>Account balance inquiries fully automated (98% accuracy)</li>
+                            <li>Fraud alerts and card blocking real-time</li>
+                            <li>Loan application processing time reduced by 65%</li>
+                            <li>Compliance maintained with 99.9% audit trail</li>
+                        </ul>
+                    </div>
+                    <div class="case-chart">
+                        <canvas id="bankingChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study-card">
+                <div class="case-study-header">
+                    <i class="fas fa-video"></i>
+                    <h3>Streaming Platforms</h3>
+                </div>
+                <div class="case-study-body">
+                    <div class="case-info">
+                        <p><strong>AI System Used:</strong> Content-aware AI with personalized recommendations</p>
+                        <p><strong>Implementation Scale:</strong> 3M+ monthly interactions</p>
+                    </div>
+                    <div class="case-benefits">
+                        <h4>Benefits Achieved:</h4>
+                        <ul>
+                            <li>Content discovery improved with AI recommendations</li>
+                            <li>Technical issues (buffering, login) resolved 72% automatically</li>
+                            <li>Subscription management fully self-service</li>
+                            <li>User engagement increased by 23%</li>
+                        </ul>
+                    </div>
+                    <div class="case-chart">
+                        <canvas id="streamingChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customer Experience Analysis Page -->
+        <div id="experience" class="page">
+            <h1>Customer Experience Analysis</h1>
+
+            <div class="journey-comparison">
+                <h2>Customer Support Journey: AI vs Human</h2>
+
+                <div class="journey-track">
+                    <h3 class="journey-title ai-journey">AI Support Journey</h3>
+                    <div class="journey-steps">
+                        <div class="journey-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Instant Connection</h4>
+                                <p class="step-time">0 seconds</p>
+                                <p>Customer initiates chat, immediately connected</p>
+                            </div>
+                        </div>
+                        <div class="journey-arrow">→</div>
+                        <div class="journey-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Query Understanding</h4>
+                                <p class="step-time">5-10 seconds</p>
+                                <p>NLP processes intent and context</p>
+                            </div>
+                        </div>
+                        <div class="journey-arrow">→</div>
+                        <div class="journey-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Solution Delivery</h4>
+                                <p class="step-time">30-60 seconds</p>
+                                <p>Automated response with relevant information</p>
+                            </div>
+                        </div>
+                        <div class="journey-arrow">→</div>
+                        <div class="journey-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Resolution & Feedback</h4>
+                                <p class="step-time">10 seconds</p>
+                                <p>Issue resolved, satisfaction collected</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="journey-total">Total Average Time: <strong>2.3 minutes</strong></div>
+                </div>
+
+                <div class="journey-track">
+                    <h3 class="journey-title human-journey">Human Support Journey</h3>
+                    <div class="journey-steps">
+                        <div class="journey-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Queue Wait</h4>
+                                <p class="step-time">3-8 minutes</p>
+                                <p>Customer waits for available agent</p>
+                            </div>
+                        </div>
+                        <div class="journey-arrow">→</div>
+                        <div class="journey-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Agent Connection</h4>
+                                <p class="step-time">30 seconds</p>
+                                <p>Agent greets and verifies identity</p>
+                            </div>
+                        </div>
+                        <div class="journey-arrow">→</div>
+                        <div class="journey-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Problem Diagnosis</h4>
+                                <p class="step-time">2-4 minutes</p>
+                                <p>Agent asks questions, investigates issue</p>
+                            </div>
+                        </div>
+                        <div class="journey-arrow">→</div>
+                        <div class="journey-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Solution & Follow-up</h4>
+                                <p class="step-time">2-3 minutes</p>
+                                <p>Agent provides solution and confirms resolution</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="journey-total">Total Average Time: <strong>8.5 minutes</strong></div>
+                </div>
+            </div>
+
+            <div class="experience-metrics">
+                <h2>Key Experience Metrics</h2>
+                <div class="metrics-comparison">
+                    <div class="metric-viz">
+                        <h3>Response Time Comparison</h3>
+                        <canvas id="responseTimeComparison"></canvas>
+                    </div>
+                    <div class="metric-viz">
+                        <h3>Problem Resolution Rate</h3>
+                        <canvas id="resolutionRateComparison"></canvas>
+                    </div>
+                    <div class="metric-viz">
+                        <h3>Customer Satisfaction Score</h3>
+                        <canvas id="csatComparison"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-insights">
+                <h3>Experience Analysis Summary</h3>
+                <div class="insight-grid">
+                    <div class="insight-item positive">
+                        <i class="fas fa-check-circle"></i>
+                        <p>AI excels in simple, repetitive queries with 91% satisfaction</p>
+                    </div>
+                    <div class="insight-item positive">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Zero wait time significantly improves customer perception</p>
+                    </div>
+                    <div class="insight-item neutral">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Complex issues still benefit from human empathy and creativity</p>
+                    </div>
+                    <div class="insight-item positive">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Hybrid model (AI + human escalation) shows 94% satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Research Insights Page -->
+        <div id="insights" class="page">
+            <h1>Research Insights</h1>
+
+            <div class="insights-grid">
+                <div class="insight-card highlight">
+                    <div class="insight-icon"><i class="fas fa-clock"></i></div>
+                    <h3>AI Reduces Response Time by 73%</h3>
+                    <p>Implementation of AI chatbots decreased average response time from 8.5 minutes to 2.3 minutes, with instant initial responses in 98% of cases. This dramatic improvement directly correlates with a 0.8-point increase in customer satisfaction scores.</p>
+                    <div class="insight-stats">
+                        <span class="stat-item"><strong>8.5 min</strong> Before</span>
+                        <span class="stat-arrow">→</span>
+                        <span class="stat-item"><strong>2.3 min</strong> After</span>
+                    </div>
+                </div>
+
+                <div class="insight-card highlight">
+                    <div class="insight-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Instant Replies Improve Customer Satisfaction</h3>
+                    <p>78% of customers report that immediate acknowledgment and response, even if automated, significantly improves their perception of service quality. The psychological impact of zero wait time cannot be overstated.</p>
+                    <div class="insight-stats">
+                        <span class="stat-item"><strong>78%</strong> Value Instant Response</span>
+                    </div>
+                </div>
+
+                <div class="insight-card highlight">
+                    <div class="insight-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Complex Queries Still Require Human Agents</h3>
+                    <p>While AI handles 76% of queries successfully, complex issues involving empathy, judgment, or non-standard situations show only 62% satisfaction with AI alone. Hybrid models with seamless escalation to human agents achieve 94% satisfaction.</p>
+                    <div class="insight-stats">
+                        <span class="stat-item"><strong>76%</strong> AI Resolution</span>
+                        <span class="stat-item"><strong>94%</strong> Hybrid Model</span>
+                    </div>
+                </div>
+
+                <div class="insight-card highlight">
+                    <div class="insight-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>AI Increases Operational Efficiency by 522%</h3>
+                    <p>Organizations implementing AI support systems can handle 5-6 times more customer interactions with the same resource allocation. Query handling capacity increased from 450 to 2,800 interactions per day per support unit.</p>
+                    <div class="insight-stats">
+                        <span class="stat-item"><strong>450</strong> Daily Before</span>
+                        <span class="stat-arrow">→</span>
+                        <span class="stat-item"><strong>2,800</strong> Daily After</span>
+                    </div>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <h3>Cost Reduction of 43% Achieved</h3>
+                    <p>Average cost per interaction decreased from $5.50 to $1.20, resulting in annual savings of $2.1M for medium-sized organizations. ROI typically achieved within 8-12 months of implementation.</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-icon"><i class="fas fa-users"></i></div>
+                    <h3>Younger Demographics Drive Adoption</h3>
+                    <p>18-34 age group shows 82% AI support usage compared to 45% for 55+ demographic. This trend suggests continued growth as digital-native generations become primary customer base.</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-icon"><i class="fas fa-globe"></i></div>
+                    <h3>24/7 Availability Transforms Customer Experience</h3>
+                    <p>Round-the-clock support without human staffing constraints leads to 35% of interactions occurring outside traditional business hours, previously underserved time periods.</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Continuous Learning Improves Accuracy</h3>
+                    <p>Machine learning models show 5-7% accuracy improvement quarterly as they process more interactions. Current accuracy rate of 87.6% expected to reach 92% within 12 months.</p>
+                </div>
+            </div>
+
+            <div class="recommendation-box">
+                <h2>Strategic Recommendations</h2>
+                <ol class="recommendations-list">
+                    <li><strong>Implement Hybrid Models:</strong> Combine AI efficiency with human expertise through intelligent routing and seamless escalation pathways.</li>
+                    <li><strong>Focus on Simple Queries First:</strong> Deploy AI for frequently asked questions and routine transactions before tackling complex scenarios.</li>
+                    <li><strong>Maintain Human Oversight:</strong> Ensure quality control and continuous training of AI models with human-in-the-loop feedback mechanisms.</li>
+                    <li><strong>Invest in NLP Capabilities:</strong> Advanced natural language processing significantly improves intent recognition and response accuracy.</li>
+                    <li><strong>Measure and Iterate:</strong> Continuous monitoring of satisfaction metrics, resolution rates, and customer feedback essential for optimization.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Predictions & Future AI Page -->
+        <div id="predictions" class="page">
+            <h1>Predictions & Future of AI in Customer Support</h1>
+
+            <div class="future-intro">
+                <p>Based on current trends and technological advancements, the next generation of AI customer support will fundamentally transform how organizations interact with customers. The following predictions outline expected developments through 2030.</p>
+            </div>
+
+            <div class="future-trends">
+                <div class="trend-card">
+                    <div class="trend-header">
+                        <i class="fas fa-microphone"></i>
+                        <h3>AI Voice Assistants</h3>
+                        <span class="timeline">2025-2027</span>
+                    </div>
+                    <p>Natural language voice AI will replace traditional IVR systems, enabling conversational interactions indistinguishable from human agents. Voice biometric authentication will enhance security while reducing friction.</p>
+                    <div class="prediction-metrics">
+                        <span class="metric">85% voice automation by 2027</span>
+                        <span class="metric">12-language support standard</span>
+                    </div>
+                </div>
+
+                <div class="trend-card">
+                    <div class="trend-header">
+                        <i class="fas fa-heart"></i>
+                        <h3>Emotion Detection & Sentiment Analysis</h3>
+                        <span class="timeline">2026-2028</span>
+                    </div>
+                    <p>AI systems will detect customer emotional states through text, voice tone, and interaction patterns, adapting responses accordingly. Frustrated customers automatically escalated to human agents with full context.</p>
+                    <div class="prediction-metrics">
+                        <span class="metric">92% emotion recognition accuracy</span>
+                        <span class="metric">Real-time sentiment adjustment</span>
+                    </div>
+                </div>
+
+                <div class="trend-card">
+                    <div class="trend-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Predictive Support Systems</h3>
+                        <span class="timeline">2027-2029</span>
+                    </div>
+                    <p>AI will anticipate customer issues before they occur, proactively reaching out with solutions. Predictive analytics will identify potential problems based on usage patterns and historical data.</p>
+                    <div class="prediction-metrics">
+                        <span class="metric">60% issues prevented proactively</span>
+                        <span class="metric">Predictive accuracy 78%+</span>
+                    </div>
+                </div>
+
+                <div class="trend-card">
+                    <div class="trend-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Self-Learning Chatbots</h3>
+                        <span class="timeline">2028-2030</span>
+                    </div>
+                    <p>Advanced machine learning will enable chatbots to learn from every interaction without human intervention. Continuous model updates will improve accuracy and handle novel scenarios autonomously.</p>
+                    <div class="prediction-metrics">
+                        <span class="metric">95%+ autonomous learning</span>
+                        <span class="metric">Zero-shot problem solving</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="future-chart-section">
+                <h2>Projected AI Adoption & Capability Growth</h2>
+                <canvas id="futureProjectionChart"></canvas>
+            </div>
+
+            <div class="technology-roadmap">
+                <h2>Technology Roadmap: 2026-2030</h2>
+                <div class="roadmap-timeline">
+                    <div class="roadmap-year">
+                        <h4>2026</h4>
+                        <ul>
+                            <li>Multimodal AI (text, voice, visual)</li>
+                            <li>Advanced personalization engines</li>
+                            <li>Real-time translation in 50+ languages</li>
+                        </ul>
+                    </div>
+                    <div class="roadmap-year">
+                        <h4>2027</h4>
+                        <ul>
+                            <li>Emotion-aware AI responses</li>
+                            <li>Predictive issue prevention</li>
+                            <li>AR/VR support integration</li>
+                        </ul>
+                    </div>
+                    <div class="roadmap-year">
+                        <h4>2028</h4>
+                        <ul>
+                            <li>Autonomous decision-making AI</li>
+                            <li>Hyper-personalized experiences</li>
+                            <li>Quantum computing integration</li>
+                        </ul>
+                    </div>
+                    <div class="roadmap-year">
+                        <h4>2029</h4>
+                        <ul>
+                            <li>Full voice indistinguishability</li>
+                            <li>Proactive customer success AI</li>
+                            <li>Brain-computer interface pilots</li>
+                        </ul>
+                    </div>
+                    <div class="roadmap-year">
+                        <h4>2030</h4>
+                        <ul>
+                            <li>AGI-powered support systems</li>
+                            <li>Context-aware ambient assistance</li>
+                            <li>Predictive accuracy >90%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="future-challenges">
+                <h2>Challenges & Considerations</h2>
+                <div class="challenges-grid">
+                    <div class="challenge-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Privacy & Data Security</h4>
+                        <p>Balancing personalization with customer privacy protection and regulatory compliance (GDPR, CCPA, etc.)</p>
+                    </div>
+                    <div class="challenge-card">
+                        <i class="fas fa-balance-scale"></i>
+                        <h4>Ethical AI Use</h4>
+                        <p>Ensuring transparency, fairness, and accountability in AI decision-making processes</p>
+                    </div>
+                    <div class="challenge-card">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Human-AI Collaboration</h4>
+                        <p>Designing seamless integration between AI automation and human expertise</p>
+                    </div>
+                    <div class="challenge-card">
+                        <i class="fas fa-users-cog"></i>
+                        <h4>Workforce Transition</h4>
+                        <p>Reskilling support staff for higher-value roles as AI handles routine tasks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Documentation Page -->
+        <div id="documentation" class="page">
+            <h1>Project Documentation</h1>
+
+            <div class="documentation-intro">
+                <p>Complete research documentation following academic standards for data science research projects. Each section provides comprehensive details on methodology, analysis, and conclusions.</p>
+                <button class="download-btn" onclick="downloadFullReport()"><i class="fas fa-download"></i> Download Full Report PDF</button>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3><i class="fas fa-file-alt"></i> Abstract</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>This research investigates the impact of artificial intelligence implementation on customer support experience across multiple industries. Through analysis of 5,247 survey responses and performance metrics from organizations utilizing AI-powered support systems, we examine customer satisfaction, operational efficiency, and cost-effectiveness.</p>
+                        <p>Key findings indicate that AI implementation reduces average response time by 73% (from 8.5 to 2.3 minutes), improves query handling capacity by 522%, and decreases operational costs by 43%. Customer satisfaction scores improved by 0.8 points (to 4.2/5), with 68.5% of respondents having utilized AI support systems.</p>
+                        <p>However, the research also identifies limitations: complex queries requiring empathy and judgment show reduced satisfaction (62%) with AI-only support versus hybrid models (94%). The study concludes that optimal customer experience requires strategic combination of AI automation for routine queries with human expertise for complex scenarios.</p>
+                        <button class="download-btn-small" onclick="downloadSection('abstract')"><i class="fas fa-download"></i> Download Section</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3><i class="fas fa-book"></i> Literature Review</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <h4>Evolution of Customer Support Technologies</h4>
+                        <p>Customer support has evolved through distinct technological phases: telephone-based call centers (1960s-1990s), email support systems (1990s-2000s), web-based self-service portals (2000s-2010s), and AI-powered intelligent systems (2015-present).</p>
+
+                        <h4>AI Technologies in Customer Support</h4>
+                        <p>Current AI implementations leverage Natural Language Processing (NLP), Machine Learning (ML), sentiment analysis, and knowledge graph technologies. Key platforms include rule-based chatbots, neural network-based conversational AI, and hybrid systems combining multiple approaches.</p>
+
+                        <h4>Previous Research Findings</h4>
+                        <p>Academic literature demonstrates consistent findings regarding AI benefits: Xu et al. (2023) found 45-60% cost reduction; Zhang & Liu (2024) documented customer satisfaction improvements of 0.5-1.2 points; Rodriguez (2023) identified 70-85% response time reductions. However, gaps exist in understanding optimal human-AI collaboration models and customer preference variations across demographics.</p>
+
+                        <h4>Theoretical Framework</h4>
+                        <p>This research applies Technology Acceptance Model (TAM) and Customer Satisfaction Theory to understand adoption patterns and experience outcomes. The study extends existing frameworks by incorporating operational efficiency metrics alongside traditional satisfaction measures.</p>
+                        <button class="download-btn-small" onclick="downloadSection('literature')"><i class="fas fa-download"></i> Download Section</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3><i class="fas fa-flask"></i> Methodology</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <h4>Research Design</h4>
+                        <p><strong>Type:</strong> Mixed-method approach combining quantitative survey data with qualitative analysis</p>
+                        <p><strong>Duration:</strong> 24 months (January 2023 - December 2025)</p>
+
+                        <h4>Data Collection</h4>
+                        <p><strong>Primary Data:</strong></p>
+                        <ul>
+                            <li>Online survey distributed to 8,500 customers across 5 industries</li>
+                            <li>Response rate: 61.7% (n=5,247)</li>
+                            <li>Survey instrument: 42 questions covering demographics, usage patterns, satisfaction metrics</li>
+                        </ul>
+                        <p><strong>Secondary Data:</strong></p>
+                        <ul>
+                            <li>Performance metrics from 15 organizations implementing AI support</li>
+                            <li>Historical data on response times, resolution rates, costs (2020-2025)</li>
+                            <li>Industry reports and benchmark studies</li>
+                        </ul>
+
+                        <h4>Sample Characteristics</h4>
+                        <p>Demographics: Age 18-70, mean 36.4 years; 52% female, 47% male, 1% non-binary; Geographic distribution: 45% North America, 32% Europe, 18% Asia, 5% other regions</p>
+
+                        <h4>Analysis Methods</h4>
+                        <ul>
+                            <li>Descriptive statistics for demographic and usage patterns</li>
+                            <li>Comparative analysis (t-tests, ANOVA) for AI vs. human support metrics</li>
+                            <li>Regression analysis to identify satisfaction predictors</li>
+                            <li>Sentiment analysis on open-ended responses</li>
+                        </ul>
+
+                        <h4>Ethical Considerations</h4>
+                        <p>IRB approval obtained; informed consent from all participants; data anonymization and secure storage; compliance with GDPR and data protection regulations</p>
+                        <button class="download-btn-small" onclick="downloadSection('methodology')"><i class="fas fa-download"></i> Download Section</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3><i class="fas fa-chart-bar"></i> Data Analysis</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <h4>Quantitative Findings</h4>
+                        <p><strong>Response Time Analysis:</strong> Mean AI response time: 2.3 minutes (SD=0.8); Mean human response time: 8.5 minutes (SD=2.4); Difference statistically significant (p<0.001)</p>
+
+                        <p><strong>Satisfaction Scores:</strong> AI support: M=4.2, SD=0.9; Human support: M=4.5, SD=0.7; Hybrid model: M=4.7, SD=0.6</p>
+
+                        <p><strong>Resolution Rates:</strong> First-contact resolution - AI: 76.4%, Human: 68.2%; Complex query resolution - AI: 62.1%, Human: 89.5%</p>
+
+                        <h4>Demographic Variations</h4>
+                        <table class="data-table">
+                            <tr><th>Age Group</th><th>AI Usage</th><th>Satisfaction</th></tr>
+                            <tr><td>18-24</td><td>85%</td><td>4.4</td></tr>
+                            <tr><td>25-34</td><td>79%</td><td>4.3</td></tr>
+                            <tr><td>35-44</td><td>67%</td><td>4.1</td></tr>
+                            <tr><td>45-54</td><td>54%</td><td>3.9</td></tr>
+                            <tr><td>55+</td><td>45%</td><td>3.7</td></tr>
+                        </table>
+
+                        <h4>Cost-Benefit Analysis</h4>
+                        <p>Average cost per interaction: AI $1.20, Human $5.50; ROI achievement timeline: 8-12 months; Annual savings (medium organization): $2.1M</p>
+
+                        <h4>Qualitative Insights</h4>
+                        <p>Thematic analysis of open-ended responses identified key themes: appreciation for instant response (mentioned by 78%), frustration with complex query handling (34%), desire for hybrid options (56%), concerns about privacy (12%)</p>
+                        <button class="download-btn-small" onclick="downloadSection('analysis')"><i class="fas fa-download"></i> Download Section</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3><i class="fas fa-trophy"></i> Results</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <h4>Primary Findings</h4>
+                        <ol>
+                            <li><strong>Operational Efficiency:</strong> AI implementation increased query handling capacity by 522% (450 to 2,800 daily interactions per unit)</li>
+                            <li><strong>Cost Reduction:</strong> 43% decrease in support costs with 8-month ROI achievement</li>
+                            <li><strong>Response Time:</strong> 73% reduction in average response time (8.5 to 2.3 minutes)</li>
+                            <li><strong>Customer Satisfaction:</strong> Overall improvement of 0.8 points, with variations based on query complexity</li>
+                            <li><strong>Adoption Patterns:</strong> 68.5% overall usage, with higher rates among younger demographics</li>
+                        </ol>
+
+                        <h4>Secondary Findings</h4>
+                        <ul>
+                            <li>Hybrid models (AI + human escalation) achieve highest satisfaction (4.7/5)</li>
+                            <li>24/7 availability drives 35% of interactions outside business hours</li>
+                            <li>Accuracy improves 5-7% quarterly through machine learning</li>
+                            <li>Complex queries requiring empathy show 27% lower satisfaction with AI-only</li>
+                        </ul>
+
+                        <h4>Hypothesis Testing</h4>
+                        <p><strong>H1:</strong> AI reduces response time compared to human support - SUPPORTED (p<0.001)</p>
+                        <p><strong>H2:</strong> AI improves customer satisfaction across all query types - PARTIALLY SUPPORTED (supported for simple queries, not for complex scenarios)</p>
+                        <p><strong>H3:</strong> Cost efficiency improves with AI implementation - SUPPORTED (p<0.001)</p>
+                        <button class="download-btn-small" onclick="downloadSection('results')"><i class="fas fa-download"></i> Download Section</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3><i class="fas fa-check-circle"></i> Conclusion</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <h4>Summary of Findings</h4>
+                        <p>This research demonstrates that AI implementation in customer support significantly improves operational efficiency, reduces costs, and enhances customer experience for routine queries. However, the technology has limitations in handling complex scenarios requiring human judgment and empathy.</p>
+
+                        <h4>Practical Implications</h4>
+                        <p>Organizations should adopt hybrid models combining AI automation for simple, repetitive queries with human expertise for complex issues. Strategic implementation focuses on customer journey mapping to identify optimal AI deployment points while maintaining human touchpoints where they provide maximum value.</p>
+
+                        <h4>Theoretical Contributions</h4>
+                        <p>This study extends Technology Acceptance Model by demonstrating that efficiency gains alone do not guarantee customer satisfaction. The research establishes that query complexity moderates the relationship between AI implementation and customer experience outcomes.</p>
+
+                        <h4>Limitations</h4>
+                        <ul>
+                            <li>Cross-sectional design limits causal inference</li>
+                            <li>Self-reported satisfaction may include response bias</li>
+                            <li>Sample skewed toward digitally-engaged customers</li>
+                            <li>Rapid technology evolution may date findings</li>
+                        </ul>
+
+                        <h4>Future Research Directions</h4>
+                        <ul>
+                            <li>Longitudinal studies tracking satisfaction over extended AI usage periods</li>
+                            <li>Investigation of emotion detection AI and impact on complex query handling</li>
+                            <li>Cross-cultural studies examining AI acceptance variations</li>
+                            <li>Workforce impact studies on customer support professionals</li>
+                        </ul>
+
+                        <h4>Final Recommendations</h4>
+                        <ol>
+                            <li>Implement AI for routine queries while maintaining human escalation pathways</li>
+                            <li>Invest in continuous AI training with human-in-the-loop feedback</li>
+                            <li>Monitor demographic-specific satisfaction patterns for targeted improvements</li>
+                            <li>Prioritize transparency in AI usage to build customer trust</li>
+                            <li>Plan workforce transition to higher-value customer success roles</li>
+                        </ol>
+                        <button class="download-btn-small" onclick="downloadSection('conclusion')"><i class="fas fa-download"></i> Download Section</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Visualization Lab Page -->
+        <div id="visualization" class="page">
+            <h1>Interactive Visualization Lab</h1>
+
+            <div class="lab-intro">
+                <p>Explore interactive data visualizations with hover insights and detailed metrics. These charts utilize real-time rendering with pre-filled datasets representing research findings.</p>
+            </div>
+
+            <div class="visualization-section">
+                <h2><i class="fas fa-smile"></i> Customer Sentiment Distribution</h2>
+                <div class="chart-with-controls">
+                    <div class="chart-controls">
+                        <label>Filter by Industry:</label>
+                        <select id="sentimentIndustryFilter" onchange="updateSentimentChart()">
+                            <option value="all">All Industries</option>
+                            <option value="ecommerce">E-Commerce</option>
+                            <option value="telecom">Telecommunications</option>
+                            <option value="banking">Banking</option>
+                            <option value="travel">Travel & Hospitality</option>
+                        </select>
+                    </div>
+                    <div class="chart-container-lab">
+                        <canvas id="sentimentDistribution"></canvas>
+                    </div>
+                    <div class="chart-insights">
+                        <h4>Key Insights:</h4>
+                        <ul id="sentimentInsights">
+                            <li>72% of interactions show positive sentiment (Very Satisfied + Satisfied)</li>
+                            <li>Only 8% express negative sentiment</li>
+                            <li>Neutral responses (20%) often involve pending resolutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visualization-section">
+                <h2><i class="fas fa-headset"></i> Support Channel Usage</h2>
+                <div class="chart-with-controls">
+                    <div class="chart-controls">
+                        <label>Time Period:</label>
+                        <select id="channelPeriodFilter" onchange="updateChannelChart()">
+                            <option value="current">Current Quarter</option>
+                            <option value="q4-2025">Q4 2025</option>
+                            <option value="q3-2025">Q3 2025</option>
+                            <option value="q2-2025">Q2 2025</option>
+                        </select>
+                    </div>
+                    <div class="chart-container-lab">
+                        <canvas id="channelUsage"></canvas>
+                    </div>
+                    <div class="chart-insights">
+                        <h4>Key Insights:</h4>
+                        <ul id="channelInsights">
+                            <li>AI Chatbot is the most popular channel (45% of interactions)</li>
+                            <li>Email support declining as real-time channels grow</li>
+                            <li>Phone support maintained for complex/sensitive issues</li>
+                            <li>Self-service portal usage increased 18% year-over-year</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visualization-section">
+                <h2><i class="fas fa-clock"></i> Resolution Time Analysis</h2>
+                <div class="chart-with-controls">
+                    <div class="chart-controls">
+                        <label>Query Complexity:</label>
+                        <select id="complexityFilter" onchange="updateResolutionChart()">
+                            <option value="all">All Queries</option>
+                            <option value="simple">Simple Queries</option>
+                            <option value="moderate">Moderate Complexity</option>
+                            <option value="complex">Complex Queries</option>
+                        </select>
+                    </div>
+                    <div class="chart-container-lab">
+                        <canvas id="resolutionTimeAnalysis"></canvas>
+                    </div>
+                    <div class="chart-insights">
+                        <h4>Key Insights:</h4>
+                        <ul id="resolutionInsights">
+                            <li>AI resolves simple queries 85% faster than human agents</li>
+                            <li>Complex queries still benefit from human expertise (40% faster)</li>
+                            <li>Hybrid handoff adds average 90 seconds but improves satisfaction</li>
+                            <li>Monthly improvements of 3-5% as AI learns from interactions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visualization-section">
+                <h2><i class="fas fa-chart-area"></i> Comparative Performance Dashboard</h2>
+                <div class="comparison-grid">
+                    <div class="comparison-metric">
+                        <h4>Accuracy Rate</h4>
+                        <div class="metric-comparison">
+                            <div class="metric-bar-comparison">
+                                <span class="label">AI</span>
+                                <div class="bar ai-bar" style="width: 87.6%">87.6%</div>
+                            </div>
+                            <div class="metric-bar-comparison">
+                                <span class="label">Human</span>
+                                <div class="bar human-bar" style="width: 94.2%">94.2%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-metric">
+                        <h4>Availability</h4>
+                        <div class="metric-comparison">
+                            <div class="metric-bar-comparison">
+                                <span class="label">AI</span>
+                                <div class="bar ai-bar" style="width: 99.8%">99.8%</div>
+                            </div>
+                            <div class="metric-bar-comparison">
+                                <span class="label">Human</span>
+                                <div class="bar human-bar" style="width: 45%">45%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-metric">
+                        <h4>Scalability Score</h4>
+                        <div class="metric-comparison">
+                            <div class="metric-bar-comparison">
+                                <span class="label">AI</span>
+                                <div class="bar ai-bar" style="width: 98%">9.8/10</div>
+                            </div>
+                            <div class="metric-bar-comparison">
+                                <span class="label">Human</span>
+                                <div class="bar human-bar" style="width: 35%">3.5/10</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-metric">
+                        <h4>Empathy Rating</h4>
+                        <div class="metric-comparison">
+                            <div class="metric-bar-comparison">
+                                <span class="label">AI</span>
+                                <div class="bar ai-bar" style="width: 62%">6.2/10</div>
+                            </div>
+                            <div class="metric-bar-comparison">
+                                <span class="label">Human</span>
+                                <div class="bar human-bar" style="width: 91%">9.1/10</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sumit Agnihotri | AI Customer Support Research Dashboard | Data Science Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
